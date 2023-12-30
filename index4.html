@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritik's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&family=Oswald:wght@300;500&family=Vina+Sans&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(82, 10, 149);
+            color: white;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(6, 6, 138);
+        }
+
+        nav ul {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 24px;
+        }
+
+        .left {
+            font-size: 1.2rem;
+        }
+
+        .fSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 100px;
+
+        }
+
+        .leftSection {
+            /* background-color: maroon; */
+            font-size: 3rem;
+            /* margin-top: 70px; */
+
+        }
+
+        .rightSection img {
+            width: 90%;
+            margin: 40px 0;
+        }
+
+        .red {
+            color: rgb(186, 26, 26);
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: aquamarine;
+            font-size: 4rem;
+
+        }
+
+        #element {
+            color: rgb(113, 69, 113);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .secondsection {
+            margin: auto;
+            max-width: 90vw;
+            height: 90vh;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: rgb(20, 0, 0);
+        }
+
+        .secondsection h1 {
+            font-size: 2rem;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .secondsection .box {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 88px 0;
+        }
+
+        .secondsection .ver {
+            height: 98px;
+            width: 1px;
+            background-color: white;
+        }
+
+        .leftSection .btn {
+            padding: 14px;
+            color: wheat;
+            background-color: black;
+            border-radius: 20%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ritik Garg's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li>
+                    <a href="#" onclick="refreshpage()">Home</a>
+                </li>
+                <li><a href="=">About</a></li>
+                <!-- <li><a href="=">Services</a></li> -->
+                <li><a href="=">Projects</a></li>
+                <li><a href="=">Certificates</a></li>
+                <li><a href=https://www.facebook.com/profile.php?id=100010943956164>Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="fSection">
+            <div class="leftSection">
+                Hi, <span class="red">Ritik Garg</span> This Side
+                <div>And I Am a</div>
+
+                <span id="element"></span>
+                <div class="buttons"></div>
+                <button class="btn" onclick="downloadPortfolio()">Download MyPortFolio</button>
+                <button class="btn" onclick="visitLinkedIn()">Visit Linkedin Profie</button>
+
+            </div>
+            <div class="rightSection">
+                <img src="C:\Users\Dell\Downloads\developer.png">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <h1>
+                Past Experience : Fresher
+            </h1>
+            <div class="box">
+                <div class="ver"></div>
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i> Web Devloper', ' Photographer', 'Java Devloper'],
+            typeSpeed: 6.
+
+        });
+    </script>
+    <script>
+        function visitLinkedIn() {
+            var linkedinProfieUrl = 'https://www.linkedin.com/in/ritik-garg-b58979282/';
+            window.open(linkedinProfieUrl, '_blank');
+        }
+    </script>
+    <script>
+        function downloadPortfolio() {
+            var portfolioUrl = ''
+
+        }
+    </script>
+    <script>
+        function refreshpage() {
+            location.reload();
+        }
+    </script>
+
+</body>
+
+</html>
